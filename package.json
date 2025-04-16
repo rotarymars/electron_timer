@@ -1,0 +1,39 @@
+{
+  "name": "electron_timer",
+  "version": "1.0.0",
+  "description": "This repository is a simple timer application built with Electron.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-packager . --platform=win32 --arch=x64 --out=dist --overwrite",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "build": {
+    "appId": "com.electron.timer",
+    "productName": "Electron Timer",
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "target": "dir",
+      "icon": "icon.ico"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rotarymars/electron_timer.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rotarymars/electron_timer/issues"
+  },
+  "homepage": "https://github.com/rotarymars/electron_timer#readme",
+  "devDependencies": {
+    "electron": "^35.1.5",
+    "electron-builder": "^26.0.12",
+    "electron-packager": "^17.1.2",
+    "electron-reload": "^2.0.0-alpha.1"
+  }
+}

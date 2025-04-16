@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Electron Timer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="timer">
+        <h1>Electron Timer</h1>
+        <div id="time">00:00:00</div>
+        <div class="controls">
+            <button id="startStop">Start</button>
+            <button id="reset">Reset</button>
+        </div>
+        <div id="custom-time">
+            <h3>Set Time</h3>
+            <div class="time-inputs">
+                <div class="input-group">
+                    <label for="hours">Hours</label>
+                    <div class="input-wrapper">
+                        <input type="number" id="hours" min="0" value="0">
+                        <div class="arrow-controls">
+                            <button class="arrow-up" data-target="hours">▲</button>
+                            <button class="arrow-down" data-target="hours">▼</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <label for="minutes">Minutes</label>
+                    <div class="input-wrapper">
+                        <input type="number" id="minutes" min="0" max="59" value="0">
+                        <div class="arrow-controls">
+                            <button class="arrow-up" data-target="minutes">▲</button>
+                            <button class="arrow-down" data-target="minutes">▼</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <label for="seconds">Seconds</label>
+                    <div class="input-wrapper">
+                        <input type="number" id="seconds" min="0" max="59" value="0">
+                        <div class="arrow-controls">
+                            <button class="arrow-up" data-target="seconds">▲</button>
+                            <button class="arrow-down" data-target="seconds">▼</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="renderer.js"></script>
+</body>
+</html> 
